@@ -17,4 +17,14 @@ int main() {
 	int positive_sum = 0;
 	int negative_sum = 0;
 
+	for (int index = 0; index < SIZE; index++) {
+		if (array[index] < 0) {
+			negative_sum += array[index];
+		}
+	}
+
+	cout << "Sum of positive elements is" << positive_sum << ".\n" << endl;
+	cout << "Sum of negative elements is" << negative_sum << ".\n" << endl;
+
+	return 0;
 }
